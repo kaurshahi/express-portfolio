@@ -1,0 +1,77 @@
+<!--Main Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <img src="/images/logo.JPG" alt="logo" style: width="100px"; height="100px">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <b>
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+          <% if (title=="Home") { %>
+            <a class="nav-link active" aria-content="page" href="/"
+              >
+          <% } else { %>
+            <a class="nav-link" aria-content="page" href="/"
+            >
+          
+            <% } %>
+            <i class="fas fa-lg fa-laptop-house"></i> Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <% if (title=="About") { %>
+              <a class="nav-link active" aria-content="page" href="/about"
+                >
+            <% } else { %>
+              <a class="nav-link" aria-content="page" href="/about"
+              >
+            
+              <% } %>
+              <i class="fas fa-lg fa-laptop-house"></i> About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <% if (title=="Contact") { %>
+                <a class="nav-link active" aria-content="page" href="/contact"
+                  >
+              <% } else { %>
+                <a class="nav-link" aria-content="page" href="/contact"
+                >
+              
+                <% } %>
+                <i class="fas fa-lg fa-laptop-house"></i> Contact
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <% if (title=="Projects") { %>
+                  <a class="nav-link active" aria-content="page" href="/projects"
+                    >
+                <% } else { %>
+                  <a class="nav-link" aria-content="page" href="/projects"
+                  >
+                
+                  <% } %>
+                  <i class="fas fa-lg fa-laptop-house"></i> Projects
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <% if (title=="Services") { %>
+                    <a class="nav-link active" aria-content="page" href="/services"
+                      >
+                  <% } else { %>
+                    <a class="nav-link" aria-content="page" href="/services"
+                    >
+                  
+                    <% } %>
+                    <i class="fas fa-lg fa-laptop-house"></i> Services
+                    </a>
+                  </li>
+        </ul>
+      </b>
+    </div>
+  </div>
+</nav>
