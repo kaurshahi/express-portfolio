@@ -2,8 +2,36 @@
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    
+    <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: emaill@example.com</p>
+            <p>Phone: +1 000 000 0000</p>
+        </div>
+        <form action="submit" method="post">
+          <div class="form-outline mb-2">
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" class="form-control" required>
+          </div>
+          <div class="form-outline mb-2"></div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" class="form-control" required>
+          </div>
+          <div class="form-outline mb-2">
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+          </div>
+          <div class="form-outline mb-2">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-outline mb-2">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+            
+          </div>
+          <input type="submit"  class ="form-control btn btn-primary" value="Send" style="margin-bottom: 50px;">
+        </form>
   </div>
 </main>
 
